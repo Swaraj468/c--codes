@@ -1,47 +1,21 @@
-void printZerosAndOnes(int arr[], int size){
-//     int zeroCount = 0;
-//     int oneCount = 0;
-
-//     //traverse Array
-//     for(int i=0; i<size; i++){
-        
-//         if(arr[i]==0){
-//             zeroCount++;
-
-//         }
-//         if(arr[i]==1){
-//             oneCount++;
-//         }
-//     }
-//     cout<<"Total zeros: "<<zeroCount <<endl;
-//     cout<<"Total Ones: "<<oneCount<<endl;
-    
-// }
-// int findMax(int arr[], int size){
-//     int maxans = INT_MIN;
-//     for(int i=0; i<size; i++){
-//         maxans= max(maxans, arr[i]);
-
-//     }
-//     return maxans;
-// }
-// bool findTarget(int arr[], int size, int target){
-//     for(int i=0; i<size; i++){
-       
-//         if(arr[i] == target){
-//             return true;
-//         }
-//     }
-//     return false;
-// }
-// void solve1(int arr[], int n){
-//     for(int i=0; i<n; i++){
-//         arr[i]=arr[i] * 10;
-//     }
-// }
-// void print(int arr[5], int size){
-//     for(int i=0; i<size; i++){
-//         cout<<arr[i]<<" ";
-//     }
-
-// }
+#include<bits/stdc++.h>
+using namespace std;
+void ReverseArray(int arr, int size);
+int main(void){
+    int arr[]={10, 20, 30, 40, 50};
+    int size = 5;
+    ReverseArray(arr, size);
+}
+void ReverseArray(int arr, int size){
+ int i=0;
+    int j=size-1;
+    while(i<=j){
+        // if(i==j){
+        //     cout<<arr[j]<<" ";
+        //     j--;
+        //     // or we can use break here!
+        // }
+        cout<<arr[j]<<" ";
+        j--;
+    }
+}
