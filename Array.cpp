@@ -62,23 +62,33 @@ TwoPointer(arr, size);
 void TwoPointer(int arr[], int size){
     int i=0;
     int j=size-1;
-    while(i<=j){
-        if(i==j){
-            // print only 1 times
-            cout<< arr[i] <<" ";
-            i++;
-            // or we can use break instead of i+_
+    // while(i<=j){
+    //     if(i==j){
+    //         // print only 1 times
+    //         cout<< arr[i] <<" ";
+    //         i++;
+    //         // or we can use break instead of i+_
 
-        }else{
+    //     }else{
 
         
-        cout<<arr[i]<<" ";
+    //     // cout<<arr[i]<<" ";
+    //     // i++;
+    //     cout<<arr[j]<<" ";
+    //     j--;
+    //     }
+    // }
+    while(i<j){
+        swap(arr[i], arr[j]);
         i++;
-        cout<<arr[j]<<" ";
         j--;
-        }
     }
-}
+    for(int k = 0; k<size; k++){
+        cout << arr[k]<<" ";
+    }
+
+    }
+
 // void printZerosAndOnes(int arr[], int size){
 //     int zeroCount = 0;
 //     int oneCount = 0;
