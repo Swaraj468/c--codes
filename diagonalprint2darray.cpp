@@ -6,8 +6,8 @@ int main(void){
     int n=3;
     int m=3;
 //  for time complexity n
-for(int i=2; i<m; --i){
-    cout<<arr[i][i]<<" "<<endl;
+for(int i=0; i<m; i++){
+    cout<<arr[i][i]<<" ";
 }
 
     // for time complexity O(n^2)
